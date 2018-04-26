@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FilterService} from "./filters/filter.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  filters;
+
+  selectedFilters = [];
+
+  constructor(private filterService: FilterService){
+    this.filters = this.filterService.getExampleFilters();
+  }
+
+
 }
