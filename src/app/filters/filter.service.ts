@@ -29,6 +29,17 @@ export class FilterService {
       max_value: 50,
 
     },
+    {
+      field: "Text (DropDown)",
+      dateType: "text",
+      filterType: "dropdown",
+      options: [
+        'a',
+        'b',
+        'c'
+      ]
+
+    },
   ];
 
 

@@ -11,7 +11,7 @@
       <date [filter]="filter" (onFilterChange)="filterChanged($event)"></date>
     </div>
     <div *ngSwitchCase="'dropdown'">
-      <dropdown [filter]="filter"></dropdown>
+      <dropdown [filter]="filter" (onFilterChange)="filterChanged($event)"></dropdown>
     </div>
   </div>
 </div>

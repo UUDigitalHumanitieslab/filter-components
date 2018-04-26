@@ -1,3 +1,9 @@
-<p>
-  dropdown works!
-</p>
+<input type="checkbox" (change)="onCheckBoxClicked($event)" #checkbox>
+<mat-form-field>
+  <mat-select [disabled]="!checkbox.checked" [(value)]="selected" [placeholder]="filter.field" (change)="updateFilterChange(true)">
+    <mat-option *ngFor="let option of filter.options" [value]="option" >
+      {{option}}
+    </mat-option>
+
+  </mat-select>
+</mat-form-field>

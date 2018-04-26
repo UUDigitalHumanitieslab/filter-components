@@ -22,8 +22,15 @@ export class FilterComponent implements OnInit {
   constructor() {
   }
 
+  onCheckBoxClicked(e) {
+    this.updateFilterChange(e.target.checked);
+  }
+
   ngOnInit() {
   }
 
+  updateFilterChange(selected) {
+    throw Error('Not implemented');
+  }
 
 }

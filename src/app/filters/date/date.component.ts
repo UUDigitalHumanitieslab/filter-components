@@ -16,9 +16,7 @@ export class DateComponent extends FilterComponent implements OnInit {
     this.max_value = new Date(this.filter.max_value);
   }
 
-  onCheckBoxClicked(e) {
-    this.updateFilterChange(e.target.checked);
-  }
+
 
   updateFilterChange(selected: boolean) {
     const change = {

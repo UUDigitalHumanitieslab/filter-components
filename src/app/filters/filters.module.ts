@@ -12,7 +12,10 @@ import { MatSliderModule} from '@angular/material/slider';
 import {FormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatFormFieldModule, MatInputModule, MatNativeDateModule} from "@angular/material";
+import {
+  MatFormFieldModule, MatInputModule, MatNativeDateModule, MatOptionModule,
+  MatSelectModule
+} from "@angular/material";
 @NgModule({
   imports: [
     CommonModule,
@@ -23,7 +26,9 @@ import {MatFormFieldModule, MatInputModule, MatNativeDateModule} from "@angular/
     MatSliderModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatOptionModule,
+    MatSelectModule
   ],
   declarations: [FiltersComponent, TextComponent, IntComponent, DateComponent, DropdownComponent, FilterComponent],
   providers: [FilterService],
