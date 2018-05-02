@@ -1,9 +1,19 @@
-<input type="checkbox" (change)="onCheckBoxClicked($event)" #checkbox>
-<mat-form-field>
-  <mat-select [disabled]="!checkbox.checked" [(value)]="selected" [placeholder]="filter.field" (change)="updateFilterChange(true)">
-    <mat-option *ngFor="let option of filter.options" [value]="option" >
-      {{option}}
-    </mat-option>
+<div class="columns">
+  <div class="column is-1">
+    <input type="checkbox" (change)="onCheckBoxClicked($event)" #checkbox>
+  </div>
+  <div class="column">
+    <ng-select [items]="filter.options"
 
-  </mat-select>
-</mat-form-field>
+               [disabled]="!checkbox.checked"
+               [(ngModel)]="selected"
+               (change)="updateFilterChange(true)"
+    >
+    </ng-select>
+
+  </div>
+</div>
+
+
+
+

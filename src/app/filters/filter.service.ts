@@ -33,11 +33,7 @@ export class FilterService {
       field: "Text (DropDown)",
       dateType: "text",
       filterType: "dropdown",
-      options: [
-        'a',
-        'b',
-        'c'
-      ]
+      options: this.generate_filter_options(40)
 
     },
   ];
@@ -46,5 +42,14 @@ export class FilterService {
   getExampleFilters() {
     return this.filters;
   }
+
+  private generate_filter_options(number_of_options: number): string[] {
+    const options = [];
+    for (let i = 0; i < number_of_options; i++) {
+      options.push(`${i}`);
+    }
+    return options;
+  }
+
 
 }

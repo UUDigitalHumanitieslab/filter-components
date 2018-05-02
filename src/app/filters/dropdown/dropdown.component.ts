@@ -13,8 +13,6 @@ export class DropdownComponent extends FilterComponent implements OnInit {
   }
 
 
-
-
   updateFilterChange(selected){
 
     const change = {

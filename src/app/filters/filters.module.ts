@@ -12,6 +12,7 @@ import { MatSliderModule} from '@angular/material/slider';
 import {FormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { NgSelectModule } from '@ng-select/ng-select';
 import {
   MatFormFieldModule, MatInputModule, MatNativeDateModule, MatOptionModule,
   MatSelectModule
@@ -28,7 +29,8 @@ import {
     MatNativeDateModule,
     MatFormFieldModule,
     MatOptionModule,
-    MatSelectModule
+    MatSelectModule,
+    NgSelectModule
   ],
   declarations: [FiltersComponent, TextComponent, IntComponent, DateComponent, DropdownComponent, FilterComponent],
   providers: [FilterService],

@@ -2,30 +2,8 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FilterService} from './filter.service';
 
 
-/*
-export type Filter = {
-  field: string;
-} & ({
-  dataType: 'text';
-  filterType: 'dropdown'
-  options: string[];
-} | {
-  dataType: 'int';
-  filterType: 'slider';
-  min_value: number;
-  max_value: number;
-}| {
-  dataType: 'text';
-  filterType: 'checkbox'
-} |{
-  dataType: 'date';
-  filterType: 'range';
-  min_value: Date;
-  max_value: Date;
-}
 
-);
-*/
+
 
 
 export interface Filter{

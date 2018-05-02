@@ -8,12 +8,13 @@ import {FilterComponent} from "../filter/filter.component";
 })
 export class DateComponent extends FilterComponent implements OnInit {
 
+
   min_value: Date;
   max_value: Date;
 
   ngOnInit() {
-    this.min_value = new Date(this.filter.min_value);
-    this.max_value = new Date(this.filter.max_value);
+    this.min_value = this.filter.min_value;
+    this.max_value = this.filter.max_value;
   }
 
 
