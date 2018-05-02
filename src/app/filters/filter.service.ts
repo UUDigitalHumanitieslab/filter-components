@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient} from '@angular/common/http';
 
 @Injectable()
 export class FilterService {
@@ -10,32 +10,32 @@ export class FilterService {
 
   filters = [
     {
-      field: "Text (checkbox)",
-      dateType: "text",
-      filterType: "checkbox",
+      field: 'Text (checkbox)',
+      dateType: 'text',
+      filterType: 'checkbox',
     },
     {
-      field: "Date",
+      field: 'Date',
       dataType: 'date',
       filterType: 'range',
-      min_value: new Date("1993-05-13"),
-      max_value: new Date("1993-05-15"),
+      min_value: new Date('1993-05-13'),
+      max_value: new Date('1993-05-15'),
     },
     {
-      field: "Int",
-      dateType: "int",
-      filterType: "slider",
+      field: 'Int',
+      dateType: 'int',
+      filterType: 'slider',
       min_value: 1,
       max_value: 50,
 
     },
     {
-      field: "Text (DropDown)",
-      dateType: "text",
-      filterType: "dropdown",
+      field: 'Text (DropDown)',
+      dateType: 'text',
+      filterType: 'dropdown',
       options: this.generate_filter_options(40)
 
-    },
+    }
   ];
 
 
