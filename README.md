@@ -1,3 +1,5 @@
+**These components are part of [GrETEL](https://github.com/UUDigitalHumanitieslab/gretel/tree/master/web-ui/src/app/components/filters) now.**
+
 # Filters
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
